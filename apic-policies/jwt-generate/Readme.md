@@ -23,12 +23,15 @@ The Generate JWT policy can be used in IBM API Connect to generate a JSON Web To
    -- Runtime variable in which to place the generated JWT
    -- generated jwk also written to response body
   - iss-claim
+   -- Runtime variable from which from which a string representing the Principal (iss) that issued the JWT can be retrieved
    -- The issuer claim, 'iss', identifies the principal that issues the JWT
+  - sub-claim
+   -- Runtime variable from which a string representing the Subject (sub) Claim can be retrieved
   - exp-claim
    -- The validity period (in seconds) for calculating the JWT expiration time, 'exp' claim of the JWT
   - aud-claim
-   -- Specify the value for the the Audience (aud) Claim
-   -- Multiple values are input as comma separated string values
+   -- Runtime variable from which the Audience (aud) Claim string can be retrieved. 
+   -- Multiple are set via a comma separated string
   - private-claims
    -- Specify the variable name from which a valid JSON set of private claims can be retrieved
   - jws-jwk
