@@ -32,6 +32,7 @@ JSON Web Token.
   - output-claims
    -- Runtime variable to which the JSON set of all decoded claims will be assigned
    -- default: decoded.claims
+   -- Return of HTTP 200 is considered successful validate
   - iss-claim
    -- PCRE used to validate the Issuer (iss) Claim
   - aud-claim
