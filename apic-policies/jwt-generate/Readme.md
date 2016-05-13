@@ -22,6 +22,9 @@ The Generate JWT policy can be used in IBM API Connect to generate a JSON Web To
   - jwt
    -- Runtime variable in which to place the generated JWT
    -- If not set jwt generated is written to Authorization Header as Bearer token
+  - jti-claim
+   -- Boolean used to indicate if a JWT ID (jwt) claim should be added to the JWT
+   -- If true a UUID is generated and set as the jwt claim value
   - iss-claim
    -- Runtime variable from which from which a string representing the Principal (iss) that issued the JWT can be retrieved
    -- The issuer claim, 'iss', identifies the principal that issues the JWT
@@ -61,6 +64,7 @@ The Generate JWT policy can be used in IBM API Connect to generate a JSON Web To
        - RSA1_5
        - RSA-OAEP
        - RSA-OAEP-256
+       - dir
        - A128KW
        - A192KW
        - A256KW      
