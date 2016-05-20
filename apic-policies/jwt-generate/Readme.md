@@ -47,6 +47,7 @@ The Generate JWT policy can be used in IBM API Connect to generate a JSON Web To
        - RS256
        - RS384
        - RS512
+       - none
        - ES256
        - ES384
        - ES512
